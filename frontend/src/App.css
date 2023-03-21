@@ -1,0 +1,325 @@
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+.Home {
+  padding: 35px 55px;
+  background-color: #ffe1f0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  /* display: grid;
+  justify-items: center;
+  row-gap: 30px;
+  grid-template-columns: repeat(4,1fr); */
+}
+.Card {
+  background-color: transparent;
+  height: 280px;
+  width: 224px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.397), 0px 0px 8px rgba(0, 0, 0, 0.397);
+  padding-bottom: 5px;
+}
+.image {
+  background-color: #e7e7e7;
+  height: 325px;
+  width: 100%;
+  border-radius: 18px 18px 0px 0px;
+  overflow: hidden;
+}
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.image div {
+  background-color: #e7e7e7;
+  height: 100%;
+  width: 100%;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name {
+  background-color: aliceblue;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+}
+.name span:first-child {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 0.5px;
+  line-height: 1.2em;
+}
+.name span:last-child {
+  font-size: 0.75em;
+  font-weight: 600;
+  opacity: 0.6;
+}
+.Navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.33);
+  background-color: #9140cc;
+  background: linear-gradient(45deg, #fbda61, #ff5acd);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-inline: 40px;
+}
+.navbtns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  font-size: 18px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+.hint {
+  font-weight: 500;
+  color: rgba(255, 0, 0, 0.781);
+}
+.logo {
+  font-size: 22px;
+}
+.navbtns .link:hover {
+  cursor: pointer;
+  color: #e7e7e7;
+}
+.logout {
+  transition: 0.2s;
+}
+.logout:hover {
+  cursor: pointer;
+  color: #e7e7e7;
+}
+.Register {
+  padding-top: 100px;
+  display: flex;
+  align-items: flex-start;
+  /* gap: 70px; */
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form {
+  font-weight: 600;
+  border-radius: 18px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.397), 0px 0px 8px rgba(0, 0, 0, 0.397);
+  padding: 30px;
+  padding-inline: 30px;
+  /* border: 1px solid black; */
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.inputs > input {
+  padding: 5px 5px;
+  font-size: 15px;
+  border: 1px solid rgba(76, 0, 130, 0.329);
+  outline: none;
+  border-radius: 5px;
+  background-color: #a75aff23;
+}
+.btn {
+  padding: 8px 2px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: indigo;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+.btn:hover {
+  color: #000000;
+  background-color: #a75aff;
+}
+.images > img {
+  border: 1px dotted transparent;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  object-fit: fill;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.images > img:hover {
+  border: 1px dashed rgb(0, 0, 0);
+  background-color: hsla(0, 0%, 0%, 0.459);
+}
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.ALERT {
+  /* border: 1px solid black; */
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ALERT > span {
+  color: #9140cc;
+  font-size: 18px;
+}
+.GetUser {
+  padding-top: 5px;
+  background-color: #fff;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.GetUser .image {
+  height: 325px;
+  width: 300px;
+}
+/* .Card .image{
+  height: 325px;
+  width: 300px;
+} */
+
+.GetUser .image .div {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.Card .image .div {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.GetUser > .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffe1f0;
+
+  width: 100%;
+  height: 120px;
+  gap: 10px;
+}
+.GetUser .content > span:nth-child(1) {
+  color: blue;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.GetUser .content > span:nth-child(2) {
+  color: blue;
+  font-weight: 500;
+  line-height: 20px;
+}
+.GetUser .content > span:nth-child(3) {
+  color: blue;
+  line-height: 20px;
+}
+.UploadInputs {
+  display: flex;
+}
+.Upload {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  border-radius: 00px 00px 00px 18px;
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: rgba(38, 206, 206, 0.301);
+}
+.uploadBtn {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+  padding: 15px;
+  width: 100px;
+  text-align: center;
+  border-radius: 00px 00px 18px 00px;
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #a7c3db;
+}
+.Upload:hover {
+  background-color: rgba(38, 206, 206, 0.637);
+}
+.uploadBtn:hover {
+  background-color: #007474a2;
+}
+.searchWrapper {
+  width: 186px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(76, 0, 130, 0.329);
+  overflow: hidden;
+  padding-right: 1px;
+  background-color: #a75aff23;
+  border-radius: 5px;
+}
+.searchWrapper > #password {
+  padding: 5px 5px;
+  font-size: 15px;
+  width: 158px;
+  border: 1px solid rgba(76, 0, 130, 0.329);
+  outline: none;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  background-color: transparent;
+}
+.searchWrapper > img {
+  width: 20px;
+  height: 30px;
+  object-fit: contain;
+  /* border: 1px solid rgb(0, 0, 0); */
+  background-color: #a75aff23;
+  background-color: transparent;
+}
